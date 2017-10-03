@@ -1,0 +1,274 @@
+<!DOCTYPE html><html lang="en"><!-- 51780413 --><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/LEARN.png">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Raspberry Pi Configuration</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+
+
+    <!-- Optional theme --><!--
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">-->
+
+    <!-- Theme CSS -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/blog.css" rel="stylesheet">
+    <link href="css/agency.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"
+            integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY"
+            crossorigin="anonymous"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"
+            integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo"
+            crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="blog-header">
+        <div class="container">
+            <h1 class="blog-title">LEaRN <span class="lead blog-description">The Lafayette Engagement and Research Network</span></h1>
+        </div>
+    </div>
+
+    <div class="blog-content-wrapper">
+    <div class="container blog-content"><div class="row">
+        <div class="col-sm-9 blog-main"><div class="blog-post"><h2 class="blog-post-title">Raspberry Pi Configuration</h2><a href='https://alm.cgifederal.com/collaborate/display/LEARN/Raspberry+Pi+Configuration' target='_blank' class='smalltext'>Original CGI Document</a><ol><li><p>Setup Network Connectivity:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Command</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Eclipse" data-theme="Eclipse">sudo nano /etc/dhcpcd.conf</pre>
+</div></div><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Configuration File</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: true; first-line: 1; theme: Eclipse" data-theme="Eclipse"># Note: Under &quot;nohook lookup-hostname&quot; text
+ 
+interface eth0
+
+static ip_address=&lt;ip&gt;/16
+static routers=&lt;ip_gateway&gt;
+static domain_name_servers=&lt;ip_dns&gt;</pre>
+</div></div><pre>ctrl + x to exit
+Y (Hit this letter and then hit enter key)</pre><p> </p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Command</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Eclipse" data-theme="Eclipse">sudo nano /etc/network/interfaces</pre>
+</div></div><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Configuration File</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: true; first-line: 1; theme: Eclipse" data-theme="Eclipse"># interfaces(5) file used by ifup(8) and ifdown(8)
+
+# Please note that this file is written to be used with dhcpcd
+# For static IP, consult /etc/dhcpcd.conf and &#39;man dhcpcd.conf&#39;
+
+# Include files from /etc/network/interfaces.d:
+source-directory /etc/network/interfaces.d
+
+auto lo
+iface lo inet loopback
+
+iface eth0 inet static
+  address &lt;ip address&gt;
+  netmask &lt;netmask&gt;
+  gateway &lt;gateway&gt;
+  dns-nameservers &lt;dns&gt;
+
+allow-hotplug wlan0
+iface wlan0 inet manual
+    wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+
+allow-hotplug wlan1
+iface wlan1 inet manual
+    wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf</pre>
+</div></div><pre>ctrl + x to exit
+Y (Hit this letter and then hit enter key)</pre><p> </p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Command</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Eclipse" data-theme="Eclipse">sudo nano /etc/modprobe.d/raspi-blacklist.conf</pre>
+</div></div><p>Add the following to disable WiFi and Bluetooth on the Raspberry Pi:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Configuration File</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: true; first-line: 1; theme: Eclipse" data-theme="Eclipse">#wifi
+blacklist brcmfmac
+blacklist brcmutil
+#bt
+blacklist btbcm
+blacklist hci_uar</pre>
+</div></div><pre>ctrl + x to exit
+Y (Hit this letter and then hit enter key)</pre><p> </p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Command</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Confluence" data-theme="Confluence">sudo reboot</pre>
+</div></div></li><li><p>Update and upgrade your local repository in the Raspian Jessie Lite OS:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b> Commands</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Eclipse" data-theme="Eclipse">sudo apt-get update
+sudo apt-get upgrade</pre>
+</div></div></li><li><p>Install software needed for running sensor / transmit code:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b> Commands</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Eclipse" data-theme="Eclipse">sudo apt-get install python3
+sudo apt-get install python3-rpi.gpio
+sudo apt-get install python3-wheel
+sudo apt-get install python3-pip
+sudo easy_install-3 -U pip
+ 
+sudo wget https://pypi.python.org/packages/e4/b0/286e8a936158e5cc5791d5fa3bc4b1d5a7e1ff4e5b3f3766b63d8e97708a/requests-2.14.2-py2.py3-none-any.whl#md5=a1b2f02e7ba45dff7c76f621cde042c4
+ 
+sudo wget https://pypi.python.org/packages/dd/85/519354e995d8a926ce3121034dc2144a5ae70435dad3e1155a19bbde8011/requests_toolbelt-0.7.1-py2.py3-none-any.whl#md5=978e1d4dad99ebdb780bd95f6473e98a
+ 
+sudo pip3 install requests-2.13.0-py2.py3-none-any.whl 
+sudo pip3 install requests_toolbelt-0.7.1-py2.py3-none-any.whl
+</pre>
+</div></div></li><li><p>Install Git and clone the LEaRN repository to install the program:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Commands</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Eclipse" data-theme="Eclipse">sudo apt-get install git
+ 
+git clone &lt;learn repo&gt;
+ 
+cd learn/sensors/
+ 
+sudo python3 setup.py install
+ 
+cd
+ 
+sudo rm -rf &lt;learn repo&gt;</pre>
+</div></div></li><li><p>Setup the sensor shell script in home directory:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Commands</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Eclipse" data-theme="Eclipse">which sensor_raspi_sample  # Shows the absolute path of the sampler script
+
+nano sensor.sh
+</pre>
+</div></div><p>Add parameters in sensor.sh file:  (NOTE:  Feature of Interest ID and Datastream ID will be provisioned with unique IDs)</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Configuration File</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: true; first-line: 1; theme: Eclipse" data-theme="Eclipse">#!/bin/sh
+export CGIST_FOI_ID=&quot;1111111-1111-1111-1111-111111111111&quot;
+export CGIST_DS_ID_MQ131=&quot;222222-2222-2222-2222-222222222222&quot;
+/usr/local/bin/sensor_raspi_sample &gt; /var/log/sensor.log 2&gt;&amp;1</pre>
+</div></div><pre>ctrl + x to exit
+Y (Hit this letter and then hit enter key)</pre><p>Set script as an executable and give it the following permissions:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Commands</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Eclipse" data-theme="Eclipse">chmod +x sensor.sh 
+chmod 755 sensor.sh 
+</pre>
+</div></div></li><li><p>Setup the transmit shell script in home directory:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Commands</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Eclipse" data-theme="Eclipse">which sensor_transmit   # Shows the absolute path of the transmitter script
+ 
+nano transmit.sh
+</pre>
+</div></div><p>Add parameters in transmit.sh file:  (NOTE: ID fields will be provisioned with unique IDs)</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Configuration File</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: true; first-line: 1; theme: Eclipse" data-theme="Eclipse">#!/bin/sh
+export CGIST_URL=&quot;https://api.learnlafayette.com/device/api/v1.0/CreateObservations&quot;
+export CGIST_AUTH_URL=&quot;https://api.learnlafayette.com/device/api/auth/login&quot;
+export JWT_ID=&quot;1111111-1111-1111-1111-111111111111&quot;
+export JWT_KEY=&quot;222222-2222-2222-2222-222222222222&quot;
+/usr/local/bin/sensor_transmit &gt; /var/log/sensor.log 2&gt;&amp;1</pre>
+</div></div><pre>ctrl + x to exit
+Y (Hit this letter and then hit enter key)</pre><p>Set script as an executable and give it the following permissions:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Commands</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Eclipse" data-theme="Eclipse">chmod +x transmit.sh 
+chmod 755 transmit.sh 
+</pre>
+</div></div></li><li><p>Setup Sensor and Transmit services:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Command</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Eclipse" data-theme="Eclipse"> sudo nano /lib/systemd/system/sensor.service
+</pre>
+</div></div><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Configuration File</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: true; first-line: 1; theme: Eclipse" data-theme="Eclipse">[Unit]
+Description=Sensor Spool Service
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/home/pi/sensor.sh
+
+[Install]
+WantedBy=multi-user.target</pre>
+</div></div><pre>ctrl + x to exit
+Y (Hit this letter and then hit enter key)</pre><p> </p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Command</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Eclipse" data-theme="Eclipse"> sudo nano /lib/systemd/system/transmit.service
+</pre>
+</div></div><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Configuration File</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: true; first-line: 1; theme: Eclipse" data-theme="Eclipse">[Unit]
+Description=Transmit Sersor Data Service
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/home/pi/transmit.sh
+
+[Install]
+WantedBy=multi-user.target</pre>
+</div></div><pre>ctrl + x to exit
+Y (Hit this letter and then hit enter key)</pre><p><br/>Set permissions and configure systemd for the new services:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Commands</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Eclipse" data-theme="Eclipse"> sudo chmod 644 /lib/systemd/system/sensor.service 
+ sudo chmod 644 /lib/systemd/system/transmit.service 
+ sudo systemctl daemon-enable
+ sudo systemctl daemon-reload
+ sudo systemctl enable sensor.service
+ sudo systemctl enable transmit.service</pre>
+</div></div><p><br/>Setup Cron job to restart transmitter service every 15 minutes:  </p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Commands</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Eclipse" data-theme="Eclipse"> crontab -e</pre>
+</div></div><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Configuration File</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Eclipse" data-theme="Eclipse"># Edit this file to introduce tasks to be run by cron.
+#
+# Each task to run has to be defined through a single line
+# indicating with different fields when the task will be run
+# and what command to run for the task
+#
+# To define the time you can provide concrete values for
+# minute (m), hour (h), day of month (dom), month (mon),
+# and day of week (dow) or use &#39;*&#39; in these fields (for &#39;any&#39;).#
+# Notice that tasks will be started based on the cron&#39;s system
+# daemon&#39;s notion of time and timezones.
+#
+# Output of the crontab jobs (including errors) is sent through
+# email to the user the crontab file belongs to (unless redirected).
+#
+# For example, you can run a backup of all your user accounts
+# at 5 a.m every week with:
+# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+#
+# For more information see the manual pages of crontab(5) and cron(8)
+#
+# m h  dom mon dow   command
+
+*/1 * * * * sudo -u pi scp /var/log/sensor.log &lt;Where log file gets copied to every minute&gt;
+
+*/15 * * * * sudo systemctl restart transmit.service</pre>
+</div></div><pre>ctrl + x to exit
+Y (Hit this letter and then hit enter key)</pre><p> </p></li><li><p>Setup SQLite in RAM:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Command</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Eclipse" data-theme="Eclipse"> sudo nano /etc/fstab
+</pre>
+</div></div><p>Add this line:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Configuration File</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: true; first-line: 1; theme: Eclipse" data-theme="Eclipse">tmpfs /var/spool/mqueue tmpfs defaults,noatime,nosuid,mode=0700,gid=12,size=30m 0 0</pre>
+</div></div><pre>ctrl + x to exit
+Y (Hit this letter and then hit enter key)</pre><p> </p></li><li><p>Set final permissions before rebooting Raspberry Pi:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Commands</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Eclipse" data-theme="Eclipse">sudo touch /var/spool/mqueue  # This is if the file doesn&#39;t exist.
+sudo chmod -R 777 /var/spool/mqueue
+sudo chmod -R 777 /var/log/</pre>
+</div></div><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Command</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Eclipse" data-theme="Eclipse">sudo reboot</pre>
+</div></div></li><li><p>Check the status of the new services running after rebooting:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Commands</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Eclipse" data-theme="Eclipse">sudo systemctl status sensor.service
+ 
+sudo systemctl status transmit.service </pre>
+</div></div></li><li><p>Check the log to see the application at work:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Command</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Eclipse" data-theme="Eclipse"> tail -f /var/log/sensor.log</pre>
+</div></div></li></ol><p> </p></div></div><div class="col-sm-3 blog-sidebar"> <div class="sidebar-module sidebar-module-inset"><h4>Menu</h4><ol class="list-unstyled small"><li title="Background Information"><a href='background-information.html'><span>Background Information</span></a></li><li title="Meeting Notes"><span class="sub-menu-toggle"></span><a href='meeting-notes.html'><span>Meeting Notes</span></a><ol class="list-unstyled sub-menu"><li title="2017-01-10 LEaRN Status Meeting"><a href='2017-01-10-learn-status-meeting.html'><span>2017-01-10 LEaRN Status Meeting</span></a></li><li title="2017-02-21 LEaRN Status Meeting"><a href='2017-02-21-learn-status-meeting.html'><span>2017-02-21 LEaRN Status Meeting</span></a></li><li title="2017-02-27 LEaRN Status Meeting"><a href='2017-02-27-learn-status-meeting.html'><span>2017-02-27 LEaRN Status Meeting</span></a></li><li title="2017-02-02 LEaRN Status Meeting"><a href='2017-02-02-learn-status-meeting.html'><span>2017-02-02 LEaRN Status Meeting</span></a></li><li title="2017-02-16 LEaRN Status Meeting"><a href='2017-02-16-learn-status-meeting.html'><span>2017-02-16 LEaRN Status Meeting</span></a></li><li title="2017-03-02 LEaRN EPA Review"><a href='2017-03-02-learn-epa-review.html'><span>2017-03-02 LEaRN EPA Review</span></a></li><li title="2017-03-06 LEaRN Status Meeting"><a href='2017-03-06-learn-status-meeting.html'><span>2017-03-06 LEaRN Status Meeting</span></a></li><li title="2017-03-07 LEaRN LDEQ-EPA Region 6 Sensor collocating"><a href='2017-03-07-learn-ldeq-epa-region-6-sensor-collocating.html'><span>2017-03-07 LEaRN LDEQ-EPA Region 6 Sensor collocating</span></a></li><li title="2017-03-09 LEaRN LUS Network Deployment Meeting"><a href='2017-03-09-learn-lus-network-deployment-meeting.html'><span>2017-03-09 LEaRN LUS Network Deployment Meeting</span></a></li><li title="2017-03-15 LEaRN Status Meeting"><a href='2017-03-15-learn-status-meeting.html'><span>2017-03-15 LEaRN Status Meeting</span></a></li><li title="2017-03-17 LEaRN Status Meeting"><a href='2017-03-17-learn-status-meeting.html'><span>2017-03-17 LEaRN Status Meeting</span></a></li><li title="2017-03-20 LEaRN Status Meeting (CGI)"><a href='2017-03-20-learn-status-meeting--28cgi-29.html'><span>2017-03-20 LEaRN Status Meeting (CGI)</span></a></li><li title="2017-03-22 LEaRN Initial Sensor Deployment"><a href='2017-03-22-learn-initial-sensor-deployment.html'><span>2017-03-22 LEaRN Initial Sensor Deployment</span></a></li><li title="2017-03-27 LEaRN Status Meeting (CGI)"><a href='2017-03-27-learn-status-meeting--28cgi-29.html'><span>2017-03-27 LEaRN Status Meeting (CGI)</span></a></li><li title="2017-04-03 LEaRN Status Meeting (CGI)"><a href='2017-04-03-learn-status-meeting--28cgi-29.html'><span>2017-04-03 LEaRN Status Meeting (CGI)</span></a></li><li title="2017-04-10 Status Meeting (CGI)"><a href='2017-04-10-status-meeting--28cgi-29.html'><span>2017-04-10 Status Meeting (CGI)</span></a></li><li title="2017-04-13 LEaRN Status Meeting"><a href='2017-04-13-learn-status-meeting.html'><span>2017-04-13 LEaRN Status Meeting</span></a></li><li title="2017-04-17 LEaRN Status Meeting(CGI)"><a href='2017-04-17-learn-status-meeting-28cgi-29.html'><span>2017-04-17 LEaRN Status Meeting(CGI)</span></a></li><li title="2017-04-24 LEaRN Status Meeting (CGI)"><a href='2017-04-24-learn-status-meeting--28cgi-29.html'><span>2017-04-24 LEaRN Status Meeting (CGI)</span></a></li><li title="2017-04-27 LEaRN Status Meeting"><a href='2017-04-27-learn-status-meeting.html'><span>2017-04-27 LEaRN Status Meeting</span></a></li><li title="2017-05-01 LEaRN Status Meeting (CGI)"><a href='2017-05-01-learn-status-meeting--28cgi-29.html'><span>2017-05-01 LEaRN Status Meeting (CGI)</span></a></li><li title="2017-05-08 LEaRN Status Meeting (CGI)"><a href='2017-05-08-learn-status-meeting--28cgi-29.html'><span>2017-05-08 LEaRN Status Meeting (CGI)</span></a></li><li title="2017-05-11 LEaRN Status Meeting"><a href='2017-05-11-learn-status-meeting.html'><span>2017-05-11 LEaRN Status Meeting</span></a></li><li title="2017-05-22 LEaRN Status Meeting (CGI)"><a href='2017-05-22-learn-status-meeting--28cgi-29.html'><span>2017-05-22 LEaRN Status Meeting (CGI)</span></a></li><li title="2017-05-25 LEaRN Status Meeting"><a href='2017-05-25-learn-status-meeting.html'><span>2017-05-25 LEaRN Status Meeting</span></a></li><li title="2017-05-30 LEaRN Status Meeting (CGI)"><a href='2017-05-30-learn-status-meeting--28cgi-29.html'><span>2017-05-30 LEaRN Status Meeting (CGI)</span></a></li><li title="2017-06-05 LEaRN Status Meeting (CGI)"><a href='2017-06-05-learn-status-meeting--28cgi-29.html'><span>2017-06-05 LEaRN Status Meeting (CGI)</span></a></li><li title="2017-06-08 LEaRN Status Meeting"><a href='2017-06-08-learn-status-meeting.html'><span>2017-06-08 LEaRN Status Meeting</span></a></li><li title="2017-06-12 LEaRN Status Meeting (CGI)"><a href='2017-06-12-learn-status-meeting--28cgi-29.html'><span>2017-06-12 LEaRN Status Meeting (CGI)</span></a></li><li title="2017-06-19 LEaRN Status Meeting (CGI)"><a href='2017-06-19-learn-status-meeting--28cgi-29.html'><span>2017-06-19 LEaRN Status Meeting (CGI)</span></a></li><li title="2017-06-22 LEaRN Status Meeting"><a href='2017-06-22-learn-status-meeting.html'><span>2017-06-22 LEaRN Status Meeting</span></a></li><li title="2017-06-26 LEaRN Status Meeting (CGI)"><a href='2017-06-26-learn-status-meeting--28cgi-29.html'><span>2017-06-26 LEaRN Status Meeting (CGI)</span></a></li><li title="2017-07-06 LEaRN Status Meeting"><a href='2017-07-06-learn-status-meeting.html'><span>2017-07-06 LEaRN Status Meeting</span></a></li><li title="2017-07-10 LEaRN Status Meeting (CGI)"><a href='2017-07-10-learn-status-meeting--28cgi-29.html'><span>2017-07-10 LEaRN Status Meeting (CGI)</span></a></li><li title="2017-07-17 LEaRN Status Meeting (CGI)"><a href='2017-07-17-learn-status-meeting--28cgi-29.html'><span>2017-07-17 LEaRN Status Meeting (CGI)</span></a></li><li title="2017-07-18 LEaRN Sensor Placement"><a href='2017-07-18-learn-sensor-placement.html'><span>2017-07-18 LEaRN Sensor Placement</span></a></li><li title="2017-07-18 LEaRN Sensor Fabrication"><a href='2017-07-18-learn-sensor-fabrication.html'><span>2017-07-18 LEaRN Sensor Fabrication</span></a></li><li title="2017-07-24 LEaRN Status Meeting (CGI)"><a href='2017-07-24-learn-status-meeting--28cgi-29.html'><span>2017-07-24 LEaRN Status Meeting (CGI)</span></a></li><li title="2017-08-01 LEaRN Status Meeting (CGI)"><a href='2017-08-01-learn-status-meeting--28cgi-29.html'><span>2017-08-01 LEaRN Status Meeting (CGI)</span></a></li><li title="2017-08-02 LEaRN Network Topology"><a href='2017-08-02-learn-network-topology.html'><span>2017-08-02 LEaRN Network Topology</span></a></li><li title="2017-08-03 LEaRN Status Meeting"><a href='2017-08-03-learn-status-meeting.html'><span>2017-08-03 LEaRN Status Meeting</span></a></li><li title="2017-08-07 LEaRN Status Meeting (CGI)"><a href='2017-08-07-learn-status-meeting--28cgi-29.html'><span>2017-08-07 LEaRN Status Meeting (CGI)</span></a></li><li title="2017-08-08 LEaRN Sensor Placement"><a href='2017-08-08-learn-sensor-placement.html'><span>2017-08-08 LEaRN Sensor Placement</span></a></li><li title="2017-08-11 LEaRN Sensor Fabrication"><a href='2017-08-11-learn-sensor-fabrication.html'><span>2017-08-11 LEaRN Sensor Fabrication</span></a></li><li title="2017-08-14 LEaRN Status Meeting (CGI)"><a href='2017-08-14-learn-status-meeting--28cgi-29.html'><span>2017-08-14 LEaRN Status Meeting (CGI)</span></a></li><li title="2017-08-17 LEaRN Status Meeting"><a href='2017-08-17-learn-status-meeting.html'><span>2017-08-17 LEaRN Status Meeting</span></a></li><li title="2017-08-21 LEaRN Status Meeting (CGI)"><a href='2017-08-21-learn-status-meeting--28cgi-29.html'><span>2017-08-21 LEaRN Status Meeting (CGI)</span></a></li><li title="2017-08-24 LEaRN Sensor Placement"><a href='2017-08-24-learn-sensor-placement.html'><span>2017-08-24 LEaRN Sensor Placement</span></a></li><li title="2017-08-28 LEaRN Status Meeting (CGI)"><a href='2017-08-28-learn-status-meeting--28cgi-29.html'><span>2017-08-28 LEaRN Status Meeting (CGI)</span></a></li><li title="2017-08-31 LEaRN Status Meeting"><a href='2017-08-31-learn-status-meeting.html'><span>2017-08-31 LEaRN Status Meeting</span></a></li><li title="2017-09-05 LEaRN Status Meeting (CGI)"><a href='2017-09-05-learn-status-meeting--28cgi-29.html'><span>2017-09-05 LEaRN Status Meeting (CGI)</span></a></li><li title="2017-09-08 LEaRN Sensor Fabrication"><a href='2017-09-08-learn-sensor-fabrication.html'><span>2017-09-08 LEaRN Sensor Fabrication</span></a></li><li title="2017-09-11 LEaRN Status Meeting (CGI)"><a href='2017-09-11-learn-status-meeting--28cgi-29.html'><span>2017-09-11 LEaRN Status Meeting (CGI)</span></a></li><li title="2017-09-18 LEaRN Status Meeting (CGI)"><a href='2017-09-18-learn-status-meeting--28cgi-29.html'><span>2017-09-18 LEaRN Status Meeting (CGI)</span></a></li></ol></li><li title="Project Roadmap"><span class="sub-menu-toggle"></span><a href='project-roadmap.html'><span>Project Roadmap</span></a><ol class="list-unstyled sub-menu"><li title="LEaRN - Analytics"><a href='learn---analytics.html'><span>LEaRN - Analytics</span></a></li><li title="Cloud Architecture"><a href='cloud-architecture.html'><span>Cloud Architecture</span></a></li><li title="Dashboard Requirements"><a href='dashboard-requirements.html'><span>Dashboard Requirements</span></a></li><li title="Azure Iot - LEaRN"><a href='azure-iot---learn.html'><span>Azure Iot - LEaRN</span></a></li></ol></li><li title="Product Requirements"><span class="sub-menu-toggle"></span><a href='product-requirements.html'><span>Product Requirements</span></a><ol class="list-unstyled sub-menu"><li title="User Sign in/up functionality"><a href='user-sign-in-up-functionality.html'><span>User Sign in/up functionality</span></a></li><li title="Environmental Factors gauge"><a href='environmental-factors-gauge.html'><span>Environmental Factors gauge</span></a></li><li title="Heat map"><a href='heat-map.html'><span>Heat map</span></a></li><li title="Bubble Map"><a href='bubble-map.html'><span>Bubble Map</span></a></li><li title="Notification Panel"><a href='notification-panel.html'><span>Notification Panel</span></a></li><li title="Health Issues checklist"><a href='health-issues-checklist.html'><span>Health Issues checklist</span></a></li><li title="Traffic and Asthma correlation"><a href='traffic-and-asthma-correlation.html'><span>Traffic and Asthma correlation</span></a></li><li title="Greenhouse gas emissions from oilfield produced water"><a href='greenhouse-gas-emissions-from-oilfield-produced-water.html'><span>Greenhouse gas emissions from oilfield produced water</span></a></li><li title="Vehicle emissions for higher elevations"><a href='vehicle-emissions-for-higher-elevations.html'><span>Vehicle emissions for higher elevations</span></a></li><li title="Heavy Truck Traffic (pedestrians)"><a href='heavy-truck-traffic--28pedestrians-29.html'><span>Heavy Truck Traffic (pedestrians)</span></a></li><li title="Traffic Congestion (pedestrians)"><a href='traffic-congestion--28pedestrians-29.html'><span>Traffic Congestion (pedestrians)</span></a></li><li title="Traffic Congestion (commuters)"><a href='traffic-congestion--28commuters-29.html'><span>Traffic Congestion (commuters)</span></a></li><li title="Heavy Truck Traffic (commuters)"><a href='heavy-truck-traffic--28commuters-29.html'><span>Heavy Truck Traffic (commuters)</span></a></li><li title="Sensor Quality monitoring"><a href='sensor-quality-monitoring.html'><span>Sensor Quality monitoring</span></a></li></ol></li><li title="Hardware"><span class="sub-menu-toggle"></span><a href='hardware.html'><span>Hardware</span></a><ol class="list-unstyled sub-menu"><li title="Hardware Invoices"><a href='hardware-invoices.html'><span>Hardware Invoices</span></a></li><li title="Asset Listing"><a href='asset-listing.html'><span>Asset Listing</span></a></li></ol></li><li title="Prior Art"><a href='prior-art.html'><span>Prior Art</span></a></li><li title="System Documentation"><span class="sub-menu-toggle"></span><a href='system-documentation.html'><span>System Documentation</span></a><ol class="list-unstyled sub-menu"><li title="Architecture"><a href='architecture.html'><span>Architecture</span></a></li><li title="Data Cluster Setup"><a href='data-cluster-setup.html'><span>Data Cluster Setup</span></a></li><li title="Prototype Sensors"><a href='prototype-sensors.html'><span>Prototype Sensors</span></a></li><li title="Data Objects"><a href='data-objects.html'><span>Data Objects</span></a></li><li title="Creating Observations from Python"><a href='creating-observations-from-python.html'><span>Creating Observations from Python</span></a></li><li title="API Web Server Set up"><a href='api-web-server-set-up.html'><span>API Web Server Set up</span></a></li><li title="Data Cluster Setup (CASS 3/UBUNTU 16.04 LTS)"><a href='data-cluster-setup--28cass-3-ubuntu-16.04-lts-29.html'><span>Data Cluster Setup (CASS 3/UBUNTU 16.04 LTS)</span></a></li><li title="Cassandra Configuration (YAML)"><a href='cassandra-configuration--28yaml-29.html'><span>Cassandra Configuration (YAML)</span></a></li><li title="Upgrading Node from Cass 2 to Cass 3"><a href='upgrading-node-from-cass-2-to-cass-3.html'><span>Upgrading Node from Cass 2 to Cass 3</span></a></li><li title="Raspberry Pi Configuration"><a href='raspberry-pi-configuration.html'><span>Raspberry Pi Configuration</span></a></li><li title="LEaRN Architecture Blog"><a href='learn-architecture-blog.html'><span>LEaRN Architecture Blog</span></a></li><li title="NGINX Configuration for Ubuntu 14.04"><a href='nginx-configuration-for-ubuntu-14.04.html'><span>NGINX Configuration for Ubuntu 14.04</span></a></li><li title="Deploy Cass 3 Node from Azure VM Image"><a href='deploy-cass-3-node-from-azure-vm-image.html'><span>Deploy Cass 3 Node from Azure VM Image</span></a></li><li title="Azure Services"><a href='azure-services.html'><span>Azure Services</span></a></li><li title="Azure Resources List - Current"><a href='azure-resources-list---current.html'><span>Azure Resources List - Current</span></a></li><li title="Prototype 1 pictures"><a href='prototype-1-pictures.html'><span>Prototype 1 pictures</span></a></li><li title="Network Architecture"><a href='network-architecture.html'><span>Network Architecture</span></a></li><li title="Dev Dashboard setup"><a href='dev-dashboard-setup.html'><span>Dev Dashboard setup</span></a></li></ol></li><li title="Technologies to Explore"><a href='technologies-to-explore.html'><span>Technologies to Explore</span></a></li><li title="Sensor locations"><a href='sensor-locations.html'><span>Sensor locations</span></a></li><li title="Home"><a href='index.html'><span>Home</span></a></li></ol></div></div></div></div></div><footer id="connect">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <ul class="list-inline social-buttons">
+                    <li><a href="https://twitter.com/learnlafayette" target="_blank"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li><a href="https://www.facebook.com/LEARNCollaborative" target="_blank"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/learncollaborative/" target="_blank"><i class="fa fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="js/script.js"></script>
+</body></html>

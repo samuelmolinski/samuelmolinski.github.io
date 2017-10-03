@@ -1,0 +1,313 @@
+devicenum,organization,organizationdevicenum,site,address,longitude,latitude,uniqueidentifier,stathingid,stadatastreamid,iotdeviceid,iotprimarythumbnail,iotsecondarythumbnail,mqttgateway,mqttgroup
+1,UniversityOfLafayette,1,Research Park - CGI,"538 Cajundome Blvd, Lafayette, LA 70506",-92.0421154,30.2210853,,,,,,,1,1
+2,UniversityOfLafayette,2,Research Park - Bus Stop at Athlectics Complex,"Reinhardt Drive, Lafayette, LA 70506",-92.040337,30.2151275,,,,,,,1,1
+3,UniversityOfLafayette,3,Main Campus - Rex Street Bus Stop on Main Campus,"110 Rex Street, Lafayette, LA 70503",-92.0212109,30.212946,,,,,,,1,1
+4,UniversityOfLafayette,4,Main Campus - Taft Street Parking Garage,"714 W. Taft St. Lafayette, LA 70503",-92.0159061,30.2108141,,,,,,,1,1
+5,UniversityOfLafayette,5,Main Campus - Stokes Hall Parking Garage,"311 East Lewis St. Lafayette, LA 70503",-92.0219189,30.20943299999999,,,,,,,1,1
+6,UniversityOfLafayette,6,Main Campus - Olivier Oarking Garage,"619 McKinley St. Lafayette, LA 70504",-92.0163517,30.2118751,,,,,,,1,1
+7,UniversityOfLafayette,7,Main Campus - UL Child Devleopment Center,"160 East Lewis Lafayette, LA 70504",-92.0238514,30.2108826,,,,,,,1,1
+8,UniversityOfLafayette,8,Ecology Center,"703 Thoroughbred Drive Lafayette, LA 70507",-92.00943199999999,30.30477,,,,,,,1,1
+9,UniversityOfLafayette,9,Ecology Center,"704 Thoroughbred Drive Lafayette, LA 70507",-92.0097669,30.304188,,,,,,,1,1
+10,UniversityOfLafayette,10,Cade Farm,"1177 W.J. Bernard Rd. St. Martinville, LA 70582",-91.8698593,30.0935224,,,,,,,1,1
+11,UniversityOfLafayette,11,Cade Farm,"1178 W.J. Bernard Rd. St. Martinville, LA 70582",,30.0934614,,,,,,,1,1
+12,UniversityOfLafayette,12,Slemco Energy Center,"3420 NE Evangeline Throughway Lafayette, LA",-92.026336,30.303044,,,,,,,1,1
+13,Lafayette Consolidated Government Offices,1,Rosa Parks Transportation Center,"101 Jefferson St. Lafayette, LA 70501",-92.01500639999999,30.2265078,,,,,,,1,2
+14,Lafayette Consolidated Government Offices,2,City Hall,"705 W. University Ave Lafayette, LA 70506",-92.0247327,30.22054589999999,,,,,,,1,2
+15,Lafayette Consolidated Government Offices,3,Public Works Building,"400 Dorset Ave. Lafayette, LA 70501",-92.003906,30.2114844,,,,,,,1,2
+16,Lafayette Consolidated Government Offices,4,Clifton Chenier Center,"705 W. University Ave Lafayette, LA 70506",-92.0247327,30.22054589999999,,,,,,,1,2
+17,Lafayette Consolidated Government Offices,5,LUS,"1314 Walker Rd, Lafayette, LA 70506-1100",-92.048464,30.23637,,,,,,,1,2
+18,Lafayette Consolidated Government Offices,6,Department of Environmental Quality,"400 Dugas Rd, Lafayette, LA",-92.061082,30.286297,,,,,,,1,2
+19,Lafayette Public School System,1,Acadiana Middle ,"4201 Moss Street, Lafayette, LA 70507",-92.008337,30.284651,,,,,,,0,3
+20,Lafayette Public School System,2,Acadiana High,"315 Rue Du Be'Lier, Lafayette, LA 70506",-92.0910646,30.2044888,,,,,,,0,3
+21,Lafayette Public School System,3,Alice Boucher Elementary,"400 Patterson Street,  Lafayette, LA 70501",-92.019491,30.24932,,,,,,,0,3
+22,Lafayette Public School System,4,Broadmoore Elementary  ,"609 Broadmoor Boulevard, Lafayette, La 70503",-92.0590503,30.1725249,,,,,,,0,3
+23,Lafayette Public School System,5,Broussard Middle ,"1325 S. Morgan Avenue, Broussard, LA 70518",-91.96394010000002,30.1250471,,,,,,,0,3
+24,Lafayette Public School System,6,Carencro Heights Elementary ,"601 Tee Ma Road, Carencro, LA 70520",-92.04121400000001,30.316015,,,,,,,0,3
+25,Lafayette Public School System,7,Carencro Middle,"4301 N. University Avenue, Carencro, LA 70520",-92.0506032,30.3166245,,,,,,,0,3
+26,Lafayette Public School System,8,Carencro High,"721 W. Butcher Switch Road, Lafayette, LA 70507",-92.0402355,30.2860564,,,,,,,0,3
+27,Lafayette Public School System,9,Charles M. Burke Elementary,"2845 Ridge Road,  Duson, LA 70529",-92.1741449,30.1809147,,,,,,,0,3
+28,Lafayette Public School System,10,Comeaux High,"100 W. Bluebird Drive, Lafayette, LA 70508",-92.03195,30.156944,,,,,,,0,3
+29,Lafayette Public School System,11,Duson Elementary,"301 Fourth St.reet, Duson, LA 70529",-92.18160619999999,30.2387015,,,,,,,0,3
+30,Lafayette Public School System,12,Early College Academy,"320 Devalcourt, Lafayette, LA 70506",-92.05424599999999,30.216481,,,,,,,0,3
+31,Lafayette Public School System,13,Edgar Martin Middle ,"401 Broadmoor Boulevard, Lafayette, LA 70503",-92.06406799999999,30.176687,,,,,,,0,3
+32,Lafayette Public School System,14,Ernest Gallet,"2901 E. Milton Avenue, Youngsville, LA 70592",-92.01300900000001,30.110226,,,,,,,0,3
+33,Lafayette Public School System,15,Evangeline Elementary ,"610 E. Butcher Switch, Lafayette, LA 70507",-92.01037409999999,30.2838258,,,,,,,0,3
+34,Lafayette Public School System,16,Green T. Lindon ,"603 Avenue B, Youngsville, LA 70592",-91.99765699999999,30.095198,,,,,,,0,3
+35,Lafayette Public School System,17,Judice Middle,"2645 S. Fieldspan Road, Duson, LA 70529",-92.14028619999999,30.1673699,,,,,,,0,3
+36,Lafayette Public School System,18,J. W. Faulk ,"711 E. Willow Street, Lafayette, LA 70501",-91.99933899999999,30.246012,,,,,,,0,3
+37,Lafayette Public School System,19,J. W. James ,"1500 W. Willow Street, Scott, LA 70583",-92.0442209,30.245616,,,,,,,0,3
+38,Lafayette Public School System,20,Katharine Drexel Elementary,"409 St. Deporres Street, Broussard, LA 70518",-91.957251,30.139783,,,,,,,0,3
+39,Lafayette Public School System,21,Lafayette Middle ,"1301 W. University,  Lafayette, LA 70506",-92.028009,30.224604,,,,,,,0,3
+40,Lafayette Public School System,22,Lafayette High,"3000 W. Congress Street, Lafayette, LA 70506",-92.058272,30.207521,,,,,,,0,3
+41,Lafayette Public School System,23,L. G. Alleman (Middle),"600 Roselawn Boulevard, Lafayette, LA 70503",-92.0424767,30.1913178,,,,,,,0,3
+42,Lafayette Public School System,24,L. Leo Judice     ,"5801 Cameron Street, Scott, LA 70583",-92.094752,30.233001,,,,,,,0,3
+43,Lafayette Public School System,25,Live Oak Elementary ,"3020 N. University Avenue, Lafayette, LA 70507",-92.0484793,30.2864919,,,,,,,0,3
+44,Lafayette Public School System,26,Milton Elementary/Middle,"222 W. Milton Avenue, Milton, LA 70558",-92.07674,30.10497,,,,,,,0,3
+45,Lafayette Public School System,27,Myrtle Place (Elementary) ,"1100 Myrtle Place Boulevard, Lafayette, LA 70506",-92.03109599999999,30.227349,,,,,,,0,3
+46,Lafayette Public School System,28,Northside High,"301 Dunand Street,  Lafayette, LA 70501",-92.002838,30.251483,,,,,,,0,3
+47,Lafayette Public School System,29,Ossun Elementary ,"400 Rue Scholastique, Lafayette, LA 70507",-92.09653569999999,30.2871543,,,,,,,0,3
+48,Lafayette Public School System,30,Paul Breaux (Middle) ,"1400 S. Orange Street, Lafayette, LA 70501",-91.99835039999999,30.2188791,,,,,,,0,3
+49,Lafayette Public School System,31,Plantation Elementary ,"1801 Kaliste Saloom Road, Lafayette, LA 70508",-92.032749,30.168443,,,,,,,0,3
+50,Lafayette Public School System,32,Prairie Elementary,"2910 Ambassador Caffery Parkway, Lafayette, LA 70506",-92.07602,30.194598,,,,,,,0,3
+51,Lafayette Public School System,33,Ridge Elementary,"2901 South Fieldspan Road, Duson, LA 70529",-92.140259,30.159391,,,,,,,0,3
+52,Lafayette Public School System,34,Scott Middle,"116 Marie Street, Scott, LA 70583",-92.0926762,30.2300115,,,,,,,0,3
+53,Lafayette Public School System,35,S. J. Montgomery (Elementary) ,"601 Foreman Drive,  Lafayette, LA 70501",-92.0599924,30.2114378,,,,,,,0,3
+54,Lafayette Public School System,36,Southside High,"312 Almonaster Road,  Youngsville, LA 70592",-91.97442129999999,30.087387,,,,,,,0,3
+55,Lafayette Public School System,37,STEM Academy (Middle),"805 Teurlings Drive, Lafayette, LA 70501",-91.990089,30.2483376,,,,,,,0,3
+56,Lafayette Public School System,38,Truman Elementary,"200 Clara Street, Lafayette, LA 70501",-92.03206519999999,30.2485131,,,,,,,0,3
+57,Lafayette Public School System,39,Westside Elementary,"912 Delhomme Avenue, Scott, LA 70583",-92.10266,30.236297,,,,,,,0,3
+58,Lafayette Public School System,40,Woodvale Elementary ,"100 Leon Drive, Lafayette, LA 70503",-92.044076,30.196803,,,,,,,0,3
+59,Lafayette Public School System,41,Youngsville Middle ,"600 Church Street, Youngsville, LA 70592",-91.99590599999999,30.098828,,,,,,,0,3
+60,Lafayette Public Library System,1,Main Library,"301 W. Congress Street, Lafayette, LA 70501",-92.02021990000001,30.2261627,,,,,,,0,4
+61,Lafayette Public Library System,2,Butler Memorial Branch,"309 Cora Stree, Lafayette, LA 70501",-92.02617,30.2477854,,,,,,,0,4
+62,Lafayette Public Library System,3,Chenier Branch,"220 West Willow Street, Bldg C, Lafayette, LA 70501",-92.01639999999999,30.24572,,,,,,,0,4
+63,Lafayette Public Library System,4,Duson Branch,"310 Avenue au Nord, Duson, LA 70529",-92.18166289999999,30.2374514,,,,,,,0,4
+64,Lafayette Public Library System,5,East Regional Library,"215 La Neuville Road, Youngsville, LA 70591",-91.995997,30.144095,,,,,,,0,4
+65,Lafayette Public Library System,6,Milton Branch,"108 W. Milton Avenue,  Milton, LA 70558",-92.074389,30.1051772,,,,,,,0,4
+66,Lafayette Public Library System,7,North Regional Library,"5101 North University Avenue , Carencro, LA 70520",-92.050061,30.3279293,,,,,,,0,4
+67,Lafayette Public Library System,8,Scott Branch,"5808 West Cameron Street, Scott, LA 70583",-92.09496039999999,30.2338971,,,,,,,0,4
+68,Lafayette Public Library System,9,South Regional Library,"6101 Johnston Street, Lafayette, LA 70503",-92.0818338,30.1664641,,,,,,,0,4
+69,Hospitals,1,Lafayette General Medical Center,"1214 Coolidge Street, Lafayette, LA 70503",-92.0195301,30.2024457,,,,,,,0,5
+70,Hospitals,2,Medical Center of Southwest Louisiana,"2810 Ambassardor Caffery Parkway, Lafayette, LA 70506",-92.0772429,30.1979657,,,,,,,0,5
+71,Hospitals,3,Our Lady of Lordes ,"4801 Ambassador Caffery Parkway, Lafayette, LA 70508",-92.03698299999999,30.150517,,,,,,,0,5
+72,Hospitals,4,"Surgery Center, Inc.","1101 S College Rd. #100, Lafayette, LA 70503",-92.02753949999999,30.2002554,,,,,,,0,5
+73,Hospitals,5,University Medical Center,"2390 West Congress Street, Lafayette, LA 70506",-92.0466828,30.217408,,,,,,,0,5
+74,Hospitals,6,Women's & Childrens,"4600 Ambassador Caffery Parkway, Lafayette, LA 70508",-92.0462694,30.1525355,,,,,,,0,5
+75,Bayou Vermilion District Boat Launch Locations,1,North Boat Landing,"3604 Shadow Bluff Drive, Lafayette, LA 70507",-91.9843695,30.2711098,,,,,,,0,6
+76,Bayou Vermilion District Boat Launch Locations,2,Beaver Park Launch,"1632 Surrey Street, Lafayette, LA 70508",-91.997901,30.211733,,,,,,,0,6
+77,Bayou Vermilion District Boat Launch Locations,3,Rotary Point,"W. Bayou Parkway, Lafayette, LA 70503",-92.0354462,30.1922482,,,,,,,0,6
+78,Bayou Vermilion District Boat Launch Locations,4,Nature Station,"1205 East Alexander Street, Lafayette, LA 70501 ",-91.9866162,30.2536175,,,,,,,0,6
+79,Bayou Vermilion District Boat Launch Locations,5,Vermillionville,"300 Fisher Road, Lafayette, LA 70508",-91.9963731,30.2143755,,,,,,,0,6
+80,Bayou Vermilion District Boat Launch Locations,6,Camellia Bridge," Bellaire Road, Lafayette, LA 70503",-92.0473749,30.1813219,,,,,,,0,6
+81,Bayou Vermilion District Boat Launch Locations,7,Southside Park,"632 E Broussard Road, Lafayette, LA 70503",-92.07867259999999,30.1400971,,,,,,,0,6
+82,Lafayette Parks and Recreation,1,Acadiana Park,"1005 E Alexander St.,Lafayette, LA 70501",-91.98911199999999,30.25445,,,,,,,0,7
+83,Lafayette Parks and Recreation,2,Arceneaux Park,"835 E. Main St., Broussard, LA 70518",-91.952219,30.14739,,,,,,,0,7
+84,Lafayette Parks and Recreation,3,Beaullieu Park,"411 W. Bluebird Dr.,Lafayette, LA 70508",-92.0335516,30.1530977,,,,,,,0,7
+85,Lafayette Parks and Recreation,4,Beaver Park,"1632 Surrey Street,Lafayette, LA 70508",-91.997901,30.211733,,,,,,,0,7
+86,Lafayette Parks and Recreation,5,Broadmoor Park,"605 Broadmoor Blvd. ,Lafayette, LA 70503",-92.059805,30.173409,,,,,,,0,7
+87,Lafayette Parks and Recreation,6,Carencro Park,"4300 N University Ave.,Carencro, LA 70520",-92.0504211,30.3100581,,,,,,,0,7
+88,Lafayette Parks and Recreation,7,Chargois Park,"606 Guilbeau Rd.,Lafayette, LA 70520",-92.03662949999999,30.3194976,,,,,,,0,7
+89,Lafayette Parks and Recreation,8,City Park,"901 Mudd Ave.,Lafayette, LA 70501  ",-92.006945,30.232954,,,,,,,0,7
+90,Lafayette Parks and Recreation,9,City Park,"901 Mudd Ave. ,Lafayette, LA 70501 ",-92.006945,30.232954,,,,,,,0,7
+91,Lafayette Parks and Recreation,10,Deballion Park,"510 Saucier Pkwy.,Lafayette, LA 70506",-92.041737,30.240194,,,,,,,0,7
+92,Lafayette Parks and Recreation,11,Dorsey Park,"310 Cora St. ,Lafayette, LA 70501",-92.02586,30.246729,,,,,,,0,7
+93,Lafayette Parks and Recreation,12,Duson Park,"101 B. Robin Rd.,Duson, LA 70529",-92.1844934,30.2261815,,,,,,,0,7
+94,Lafayette Parks and Recreation,13,Dalton Park,"2036 Carmel Dr.,Lafayette, LA 70501",-91.97156299999999,30.236959,,,,,,,0,7
+95,Lafayette Parks and Recreation,14,Derby Playground,"105 Aris Dr.,Lafayette, LA 70501  ",-91.973878,30.239828,,,,,,,0,7
+96,Lafayette Parks and Recreation,15,Eraste Landry Playground,"1000 Jeanne St.,Lafayette, LA 70506",-92.0390989,30.228746,,,,,,,0,7
+97,Lafayette Parks and Recreation,16,Foster Memorial Park,"399 4th st.,Youngsville, LA 70592",-91.99557899999999,30.09425599999999,,,,,,,0,7
+98,Lafayette Parks and Recreation,17,Girard Park,"500 Girard Park DR.,Lafayette, LA 70503 ",-92.02002399999999,30.206572,,,,,,,0,7
+99,Lafayette Parks and Recreation,18,Graham Brown Memorial Park,"1234 E. Pont des Mouton Rd.,Lafayette, LA 70507     ",-91.99650299999999,30.27116699999999,,,,,,,0,7
+100,Lafayette Parks and Recreation,19,Heymann Memorial Park,"1500 South Orange St.,Lafayette, LA 70501",-91.9964789,30.218949,,,,,,,0,7
+101,Lafayette Parks and Recreation,20,I.R. Bud Chalmers Park,"2129 N. University,Lafayette, LA 70507",-92.043615,30.262034,,,,,,,0,7
+102,Lafayette Parks and Recreation,21,I.R. Bud Chalmers Park,"2129 N. University,Lafayette, LA 70507",-92.043615,30.262034,,,,,,,0,7
+103,Lafayette Parks and Recreation,22,J. W. James Park,"1010 Hopkins St.,Lafayette, LA 70501",-92.02806199999999,30.234034,,,,,,,0,7
+104,Lafayette Parks and Recreation,23,Judice Park,"500 Golden Grain Rd.,Duson, LA ",-92.153105,30.161906,,,,,,,0,7
+105,Lafayette Parks and Recreation,24,Lil Woods Park,"200 Ile De Copales Ave.,Lafayette, LA 70501",-92.00311099999999,30.214811,,,,,,,0,7
+106,Lafayette Parks and Recreation,25,Maurice Heymann Memorial,"700 Girard Park Dr.,Lafayette, LA 70503",-92.02283,30.200747,,,,,,,0,7
+107,Lafayette Parks and Recreation,26,Moore Park ,"250 Couret Dr.,Lafayette, LA 70507",-92.030659,30.258358,,,,,,,0,7
+108,Lafayette Parks and Recreation,27,Mouton Park,"803 Center St.,Lafayette, LA",-91.993804,30.240311,,,,,,,0,7
+109,Lafayette Parks and Recreation,28,Pa Davis Park,"120 Dawn St.,Lafayette, LA 70501",-91.98914599999999,30.225859,,,,,,,0,7
+110,Lafayette Parks and Recreation,29,Parc de Lafayette,"539 Jefferson St.,Lafayette, LA 70501",-92.01853899999999,30.224649,,,,,,,0,7
+111,Lafayette Parks and Recreation,30,Parc Sans Souci,"201 E. Vermillion St.,Lafayette, LA 70501",-92.017437,30.224518,,,,,,,0,7
+112,Lafayette Parks and Recreation,31,Picard Park,"130 Park Ln.,Lafayette, LA 70508",-92.0729379,30.117812,,,,,,,0,7
+113,Lafayette Parks and Recreation,32,Plantation Park,"1801 Kaliste Saloom Rd.,Lafayette, LA 70508  ",-92.032749,30.168443,,,,,,,0,7
+114,Lafayette Parks and Recreation,33,Scott Park,"1200 Cormier St.,Scott, LA 70583",-92.09504559999999,30.2399292,,,,,,,0,7
+115,Lafayette Parks and Recreation,34,Southside Regional Park,"221 La Neuville Rd.,Youngsville, LA 70592  ",-91.997288,30.144154,,,,,,,0,7
+116,Lafayette Parks and Recreation,35,Thomas Park,"300 Geraldine Dr.,Lafayette, LA 70503",-92.06245799999999,30.185403,,,,,,,0,7
+117,Lafayette Parks and Recreation,36,Veterans Park,"200 Feu Follet Rd.,Lafayette, LA 70508   ",-92.01534799999999,30.181739,,,,,,,0,7
+118,Intersections,1,PINHOOK @ SIMCOE,"2005,E Simcoe St,Lafayette,LA,US,70501",-91.995072,30.226246000000003,,,,,,,0,8
+119,Intersections,2,SIMCOE @ 12TH,"1402,12th St,Lafayette,LA,US,70501",-91.99984,30.229605,,,,,,,0,8
+120,Intersections,3,SIMCOE @ JEFFERSON/SURREY,"801-815,LA-94,Lafayette,LA,US,70501",-92.007809,30.230583000000003,,,,,,,0,8
+121,Intersections,4,MOSS @ SIMCOE,"701,E Simcoe St,Lafayette,LA,US,70501",-92.009086,30.230697999999997,,,,,,,0,8
+122,Intersections,5,NB THRUWAY @ SIMCOE,"403,NE Evangeline Throughway,Lafayette,LA,US,70501",-92.01309,30.231028000000002,,,,,,,0,8
+123,Intersections,6,SB THRUWAY @ SIMCOE,"313,E Simcoe St,Lafayette,LA,US,70501",-92.013766,30.231073,,,,,,,0,8
+124,Intersections,7,SIMCOE @ PIERCE,"299,W Simcoe St,Lafayette,LA,US,70501",-92.01880600000001,30.230674,,,,,,,0,8
+125,Intersections,8,UNIVERSITY @ AGNES/SIMCOE,"1301-1399,W Simcoe St,Lafayette,LA,US,70501",-92.030451,30.229311,,,,,,,0,8
+126,Intersections,9,LOUISIANA @ CARMEL,"101,LA-94,Lafayette,LA,US,70501",-92.0023,30.234571000000003,,,,,,,0,8
+127,Intersections,10,LOUISIANA @ MUDD,"1110,Louisiana Ave,Lafayette,LA,US,70501",-92.002689,30.231739,,,,,,,0,8
+128,Intersections,11,NB THRUWAY @ LOUISIANA,"208,Louisiana Ave,Lafayette,LA,US,70501",-92.009452,30.224875,,,,,,,0,8
+129,Intersections,12,SB THRUWAY @ JOHNSTON,"101,Louisiana Ave,Lafayette,LA,US,70501",-92.010323,30.224559999999997,,,,,,,0,8
+130,Intersections,13,JOHNSTON @ CYPRESS/GARFIELD,"201,Johnston St,Lafayette,LA,US,70501",-92.01446800000001,30.22438,,,,,,,0,8
+131,Intersections,14,JOHNSTON @ VERMILION,"499,US-167,Lafayette,LA,US,70501",-92.015281,30.223125,,,,,,,0,8
+132,Intersections,15,JOHNSTON @ MAIN,"700,US-167,Lafayette,LA,US,70501",-92.016019,30.221970000000002,,,,,,,0,8
+133,Intersections,16,JOHNSTON @ JEFFERSON,"1100-1108,Jefferson St,Lafayette,LA,US,70501",-92.017208,30.220095,,,,,,,0,8
+134,Intersections,17,JOHNSTON @ UNIVERSITY,"101,LA-182,Lafayette,LA,US,70503",-92.019003,30.217274,,,,,,,0,8
+135,Intersections,18,JOHNSTON @ ST MARY,"1500,US-167,Lafayette,LA,US,70503",-92.021742,30.214487,,,,,,,0,8
+136,Intersections,19,JOHNSTON @ LEWIS,"1730-1798,US-167,Lafayette,LA,US,70503",-92.025426,30.212282000000002,,,,,,,0,8
+137,Intersections,20,JOHNSTON @ ST JULIEN,"1998,US-167,Lafayette,LA,US,70503",-92.026909,30.211509999999997,,,,,,,0,8
+138,Intersections,21,JOHNSTON @ COLLEGE,"2701,US-167,Lafayette,LA,US,70503",-92.038364,30.207271000000002,,,,,,,0,8
+139,Intersections,22,JOHNSTON @ BERTRAND,"2898,US-167,Lafayette,LA,US,70503",-92.040778,30.205814,,,,,,,0,8
+140,Intersections,23,JOHNSTON @ VITAL/DOUCET,"3144-3198,US-167,Lafayette,LA,US,70503",-92.04888100000001,30.203424,,,,,,,0,8
+141,Intersections,24,COLLEGE @ PINHOOK,"1631-1699,LA-3025,Lafayette,LA,US,70503",-92.01535600000001,30.201021,,,,,,,0,8
+142,Intersections,25,COLLEGE @ COOLIDGE/BENDEL,"1404,S College Rd,Lafayette,LA,US,70503",-92.019356,30.20144,,,,,,,0,8
+143,Intersections,26,JOHNSTON @ ARNOULD,"3601,US-167,Lafayette,LA,US,70503",-92.05301999999999,30.201925,,,,,,,0,8
+144,Intersections,27,JOHNSTON @ BRENTWOOD,"4200,Johnston St,Lafayette,LA,US,70503",-92.057046,30.196231,,,,,,,0,8
+145,Intersections,28,JOHNSTON @ GUILBEAU/CAMELLIA,"4405-4499,US-167,Lafayette,LA,US,70503",-92.058626,30.193734999999997,,,,,,,0,8
+146,Intersections,29,JOHNSTON @ LANA,"4573-4603,US-167,Lafayette,LA,US,70503",-92.063576,30.188856,,,,,,,0,8
+147,Intersections,30,JOHNSTON @ RIDGE,"5403-5405,US-167,Lafayette,LA,US,70503",-92.071253,30.181365999999997,,,,,,,0,8
+148,Intersections,31,JOHNSTON @ AMBASSADOR,"3501,LA-3073,Lafayette,LA,US,70503",-92.074486,30.178089,,,,,,,0,8
+149,Intersections,32,THRUWAY @ SURREY/UNIVERSITY,"1806,LA 728-8,Lafayette,LA,US,70508",-91.99951999999999,30.209169,,,,,,,0,8
+150,Intersections,33,THRUWAY @ PINHOOK,"1401-1407,US-90,Lafayette,LA,US,70501",-92.00466800000001,30.21769,,,,,,,0,8
+151,Intersections,34,SURREY @ BLUE BLVD,"1726-1798,LA 728-8,Lafayette,LA,US,70508",-91.995171,30.210632,,,,,,,0,8
+152,Intersections,35,NB THRUWAY @ 12TH,"815-899,US-90,Lafayette,LA,US,70501",-92.008184,30.222501,,,,,,,0,8
+153,Intersections,36,NB THRUWAY @ JEFFERSON,"401-415,Jefferson Blvd,Lafayette,LA,US,70501",-92.011668,30.229021999999997,,,,,,,0,8
+154,Intersections,37,NB THRUWAY @ 3RD,"37,US-167,Lafayette,LA,US,70501",-92.01214,30.229874,,,,,,,0,8
+155,Intersections,38,NB THRUWAY @ MUDD,"608,US-167,Lafayette,LA,US,70501",-92.012778,30.232959,,,,,,,0,8
+156,Intersections,39,NB THRUWAY @ WILLOW,"101,E Willow St,Lafayette,LA,US,70501",-92.011811,30.244646000000003,,,,,,,0,8
+157,Intersections,40,SB THRUWAY @ WILLOW,,-92.013375,30.244843,,,,,,,0,8
+158,Intersections,41,SB THRUWAY @ MUDD,"600,US-167,Lafayette,LA,US,70501",-92.014062,30.233118,,,,,,,0,8
+159,Intersections,42,SB THRUWAY @ 3RD,"301,E 3rd St,Lafayette,LA,US,70501",-92.01298,30.229514,,,,,,,0,8
+160,Intersections,43,SB THRUWAY @ JEFFERSON,"301,Jefferson Blvd,Lafayette,LA,US,70501",-92.012525,30.228666999999998,,,,,,,0,8
+161,Intersections,44,LOUISIANA @ ARDOIN DR (TARGET),"22201-22491,Pine Hill Cemetery Rd,Iowa,LA,US,70647",-92.992489,30.263788,,,,,,,0,8
+162,Intersections,45,PINHOOK @ SURREY,"1108-1198,LA 728-8,Lafayette,LA,US,70501",-91.998204,30.223605,,,,,,,0,8
+163,Intersections,46,PINHOOK @ GENERAL MOUTON,"200,W Pinhook Rd,Lafayette,LA,US,70501",-92.008606,30.212457,,,,,,,0,8
+164,Intersections,47,PINHOOK @ UNIVERSITY,"400-440,LA-182,Lafayette,LA,US,70503",-92.009791,30.210532,,,,,,,0,8
+165,Intersections,48,PINHOOK @ ST MARY,"700-748,LA-182,Lafayette,LA,US,70503",-92.011829,30.207010999999998,,,,,,,0,8
+166,Intersections,49,UNIVERSITY @ TAFT,"703,E University Ave,Lafayette,LA,US,70503",-92.01316,30.212951,,,,,,,0,8
+167,Intersections,50,UNIVERSITY @ MCKINLEY,"501,E University Ave,Lafayette,LA,US,70503",-92.0149,30.214240999999998,,,,,,,0,8
+168,Intersections,51,COLLEGE @ W BAYOU PKWY,"1198,LA-3025,Lafayette,LA,US,70503",-92.026544,30.199146000000002,,,,,,,0,8
+169,Intersections,52,CONGRESS @ ST MARY,"1600,W St Mary Blvd,Lafayette,LA,US,70506",-92.031724,30.224463,,,,,,,0,8
+170,Intersections,53,CAJUNDOME @ SOUVENIR GATE,"201,Reinhardt Dr,Lafayette,LA,US,70506",-92.03898000000001,30.216354,,,,,,,0,8
+171,Intersections,54,CONGRESS @ FOREMAN,,-92.05652099999999,30.207290999999998,,,,,,,0,8
+172,Intersections,55,CONGRESS @ LAFAYETTE,"460-498,W Congress St,Lafayette,LA,US,70501",-92.02079599999999,30.226938,,,,,,,0,8
+173,Intersections,56,MOSS @ PONT DES MOUTON,"500,E Pont Des Mouton Rd,Lafayette,LA,US,70507",-92.008121,30.273034999999997,,,,,,,0,8
+174,Intersections,57,MOSS @ ALEXANDER,"2527,Moss St,Lafayette,LA,US,70501",-92.005487,30.255596999999998,,,,,,,0,8
+175,Intersections,58,MOSS @ PINE,"100,E Pine St,Lafayette,LA,US,70501",-92.006191,30.246140999999998,,,,,,,0,8
+176,Intersections,59,MOSS @ WILLOW,"348-398,E Willow St,Lafayette,LA,US,70501",-92.006362,30.243787,,,,,,,0,8
+177,Intersections,60,MOSS @ MUDD,"801,Mudd Ave,Lafayette,LA,US,70501",-92.008756,30.232478000000004,,,,,,,0,8
+178,Intersections,61,JEFFERSON @ CYPRESS,"103,E Cypress St,Lafayette,LA,US,70501",-92.01576,30.227292,,,,,,,0,8
+179,Intersections,62,JEFFERSON @ GARFIELD,"323,Jefferson St,Lafayette,LA,US,70501",-92.01739,30.226603000000004,,,,,,,0,8
+180,Intersections,63,JEFFERSON @ CONGRESS,"433-499,Jefferson St,Lafayette,LA,US,70501",-92.018336,30.225697999999998,,,,,,,0,8
+181,Intersections,64,JEFFERSON @ VERMILION,"109,E Vermilion St,Lafayette,LA,US,70501",-92.018776,30.224073999999998,,,,,,,0,8
+182,Intersections,65,UNIVERSITY @ LEE,"1255-1299,Lee Ave,Lafayette,LA,US,70501",-92.020661,30.218559999999997,,,,,,,0,8
+183,Intersections,66,BERTRAND @ BANKS,"136,Banks Ave,Lafayette,LA,US,70506",-92.060736,30.227120000000003,,,,,,,0,8
+184,Intersections,67,UNIVERSITY @ ST JOHN/ST LANDRY,"518,W University Ave,Lafayette,LA,US,70506",-92.022768,30.220144,,,,,,,0,8
+185,Intersections,68,UNIVERSITY @ CONGRESS,"1229-1299,W Congress St,Lafayette,LA,US,70501",-92.028279,30.226078,,,,,,,0,8
+186,Intersections,69,UNIVERSITY @ CAMERON,"1507,Cameron St,Lafayette,LA,US,70506",-92.03234,30.232349,,,,,,,0,8
+187,Intersections,70,UNIVERSITY @ MADELINE,"716,N University Ave,Lafayette,LA,US,70506",-92.03241,30.239067,,,,,,,0,8
+188,Intersections,71,CAMERON @ ST JOHN,"698,US-90,Lafayette,LA,US,70501",-92.02283800000001,30.231856,,,,,,,0,8
+189,Intersections,72,CAMERON @ PIERCE,"299,US-90,Lafayette,LA,US,70501",-92.019091,30.233132,,,,,,,0,8
+190,Intersections,73,CAMERON @ ST ANTOINE,"898,US-90,Lafayette,LA,US,70501",-92.024939,30.23197,,,,,,,0,8
+191,Intersections,74,COLLEGE @ BERTRAND/REINHARDT,"701-735,LA-3025,Lafayette,LA,US,70506",-92.045385,30.212553000000003,,,,,,,0,8
+192,Intersections,75,ERASTE LANDRY @ N BERTRAND,"1560-1598,LA-3025,Lafayette,LA,US,70506",-92.052413,30.224725,,,,,,,0,8
+193,Intersections,76,BERTRAND @ CONGRESS,"2402,W Congress St,Lafayette,LA,US,70506",-92.046926,30.214904999999998,,,,,,,0,8
+194,Intersections,77,CONGRESS @ ST JOHN,"612,W Congress St,Lafayette,LA,US,70501",-92.02285,30.226984,,,,,,,0,8
+195,Intersections,78,PINHOOK @ KALISTE SALOOM,"101,E Kaliste Saloom Rd,Lafayette,LA,US,70508",-92.01406899999999,30.188609000000003,,,,,,,0,8
+196,Intersections,79,UNIVERSITY @ VERSAILLES,"360-398,Versailles Blvd,Lafayette,LA,US,70501",-92.02728,30.224666,,,,,,,0,8
+197,Intersections,80,VERMILION @ LAFAYETTE,"211,W Vermilion St,Lafayette,LA,US,70501",-92.020776,30.224071000000002,,,,,,,0,8
+198,Intersections,81,BUCHANAN @ VERMILION,"699,S Buchanan St,Lafayette,LA,US,70501",-92.019788,30.224082,,,,,,,0,8
+199,Intersections,82,PINHOOK @ AUDUBON/RIVER RD,"1115,W Pinhook Rd,Lafayette,LA,US,70503",-92.014172,30.203034000000002,,,,,,,0,8
+200,Intersections,83,SIMCOE @ ST JOHN,"698,W Simcoe St,Lafayette,LA,US,70501",-92.022867,30.230548,,,,,,,0,8
+201,Intersections,84,SB THRUWAY @ TAFT,"104,14th St,Lafayette,LA,US,70501",-92.00817099999999,30.220522999999996,,,,,,,0,8
+202,Intersections,85,NB THRUWAY @ 14TH,"121-201,14th St,Lafayette,LA,US,70501",-92.007313,30.220879999999998,,,,,,,0,8
+203,Intersections,86,ST MARY @ HEYMANN,"1015,E St Mary Blvd,Lafayette,LA,US,70503",-92.013194,30.208029999999997,,,,,,,0,8
+204,Intersections,87,ST MARY @ COOLIDGE,"720-798,Coolidge St,Lafayette,LA,US,70503",-92.013795,30.208483,,,,,,,0,8
+205,Intersections,88,ST MARY @ TAFT,"220,Stewart St,Lafayette,LA,US,70501",-92.016009,30.220522999999996,,,,,,,0,8
+206,Intersections,89,ST MARY @ MCKINLEY/GIRARD PARK,"600,E St Mary Blvd,Lafayette,LA,US,70503",-92.0177,30.21139,,,,,,,0,8
+207,Intersections,90,ST MARY @ HEBRARD,"683-699,Hebrard Blvd,Lafayette,LA,US,70503",-92.01967900000001,30.212926,,,,,,,0,8
+208,Intersections,91,ST MARY @ ST LANDRY,"605-699,W St Mary Blvd,Lafayette,LA,US,70506",-92.026315,30.217882,,,,,,,0,8
+209,Intersections,92,SURREY @ 12TH,"712,LA 728-8,Lafayette,LA,US,70501",-92.002581,30.226809000000003,,,,,,,0,8
+210,Intersections,93,VERMILION @ LEE,"400,E Vermilion St,Lafayette,LA,US,70501",-92.01656700000001,30.224024,,,,,,,0,8
+211,Intersections,94,JEFFERSON @ LAMAR,"1335,Jefferson St,Lafayette,LA,US,70501",-92.014444,30.218148,,,,,,,0,8
+212,Intersections,95,WILLOW @ CORA,"301-399,Cora St,Lafayette,LA,US,70501",-92.027097,30.245763,,,,,,,0,8
+213,Intersections,96,VEROT SCHOOL @ DIGBY,"2279-2299,LA-339,Lafayette,LA,US,70508",-92.026651,30.152634000000003,,,,,,,0,8
+214,Intersections,97,KALISTE @ RIVER RANCH,"1803,Kaliste Saloom Rd,Lafayette,LA,US,70508",-92.034288,30.168688,,,,,,,0,8
+215,Intersections,98,CAMELLIA @ CAMBRIDGE,"313,Cambridge Dr,Lafayette,LA,US,70503",-92.053629,30.18712,,,,,,,0,8
+216,Intersections,99,CONGRESS @ GUILBEAU,"415,Guilbeau Rd,Lafayette,LA,US,70506",-92.07007,30.198256,,,,,,,0,8
+217,Intersections,100,BENDEL @ MARGUERITE,"101,Marguerite Blvd,Lafayette,LA,US,70503",-92.018597,30.200826,,,,,,,0,8
+218,Intersections,101,PINHOOK @ SAGE GLENN,"2437-2499,LA-182,Lafayette,LA,US,70508",-92.004122,30.180332,,,,,,,0,8
+219,Intersections,102,SIMCOE @ ST ANTOINE,"820-898,W Simcoe St,Lafayette,LA,US,70501",-92.02492600000001,30.230551000000002,,,,,,,0,8
+220,Intersections,103,ST ANTOINE @ MADELINE,"500-598,N St Antoine St,Lafayette,LA,US,70501",-92.024925,30.238184999999998,,,,,,,0,8
+221,Intersections,104,MLK @ ST ANTOINE,"1523-1549,N St Antoine St,Lafayette,LA,US,70501",-92.025527,30.249668,,,,,,,0,8
+222,Intersections,105,VEROT SCHOOL @ RUE LOUIS XIV,"1555,Verot School Rd,Lafayette,LA,US,70508",-92.020575,30.165347999999998,,,,,,,0,8
+223,Intersections,106,PINHOOK @ VEROT SCHOOL,"151-199,E Verot School Rd,Lafayette,LA,US,70508",-92.00236,30.176732,,,,,,,0,8
+224,Intersections,107,AMBASSADOR @ KALISTE,"2517-2603,Kaliste Saloom Rd,Lafayette,LA,US,70508",-92.048334,30.156484000000003,,,,,,,0,8
+225,Intersections,108,BERTRAND @ DEVALCOURT,"1101-1103,LA-3025,Lafayette,LA,US,70506",-92.04927099999999,30.218245,,,,,,,0,8
+226,Intersections,109,KALISTE SALOOM @ RUE LOUIS XIV,"1235,Kaliste Saloom Rd,Lafayette,LA,US,70508",-92.029834,30.172837,,,,,,,0,8
+227,Intersections,110,KALISTE @ BEADLE,"100,S Beadle Rd,Lafayette,LA,US,70508",-92.02247,30.180186,,,,,,,0,8
+228,Intersections,111,KALISTE @ E. BAYOU/FEU FOLLET,"445-503,Kaliste Saloom Rd,Lafayette,LA,US,70508",-92.017253,30.182888000000002,,,,,,,0,8
+229,Intersections,112,KALISTE @ MARTIAL,"101,E Martial Ave,Lafayette,LA,US,70508",-92.039816,30.164768,,,,,,,0,8
+230,Intersections,113,KALISTE @ HUGH WALLIS,"451-499,E Kaliste Saloom Rd,Lafayette,LA,US,70508",-92.005421,30.195733,,,,,,,0,8
+231,Intersections,114,JOHNSTON @ GOUDCHAUX,"5754,US-167,Lafayette,LA,US,70503",-92.07956300000001,30.173243,,,,,,,0,8
+232,Intersections,115,JOHNSTON @ WESTMARK,"5121-5177,US-167,Lafayette,LA,US,70503",-92.070164,30.182425,,,,,,,0,8
+233,Intersections,116,JOHNSTON @ SEARS,"5692-5708,US-167,Lafayette,LA,US,70503",-92.07758199999999,30.175176,,,,,,,0,8
+234,Intersections,117,JOHNSTON @ FOREMAN/WOODVALE,"101,Foreman Dr,Lafayette,LA,US,70506",-92.052114,30.202339000000002,,,,,,,0,8
+235,Intersections,118,JOHNSTON @ CAJUNDOME/TWINOAKS,"2401,US-167,Lafayette,LA,US,70503",-92.033822,30.209197999999997,,,,,,,0,8
+236,Intersections,119,LOUISIANA @ SURREY,"801,Louisiana Ave,Lafayette,LA,US,70501",-92.004598,30.228226,,,,,,,0,8
+237,Intersections,120,LOUISIANA @ SIMCOE,"1106,E Simcoe St,Lafayette,LA,US,70501",-92.003017,30.230001,,,,,,,0,8
+238,Intersections,121,LOUISIANA @ WILLOW,"2400-2498,Louisiana Ave,Lafayette,LA,US,70501",-92.000348,30.245532,,,,,,,0,8
+239,Intersections,122,LOUISIANA @ ALEXANDER,"500-610,E Alexander St,Lafayette,LA,US,70501",-91.99943499999999,30.255102,,,,,,,0,8
+240,Intersections,123,WILLOW @ TEURLINGS,"1,Teurlings Dr,Lafayette,LA,US,70501",-91.98893199999999,30.244028000000004,,,,,,,0,8
+241,Intersections,124,PINHOOK @ CARMEL,"900-946,LA-94,Lafayette,LA,US,70501",-91.992703,30.233396999999997,,,,,,,0,8
+242,Intersections,125,MOSS @ CASTILLE,"1904,Moss St,Lafayette,LA,US,70501",-92.005913,30.248238,,,,,,,0,8
+243,Intersections,126,WILLOW @ PIERCE,"306,W Willow St,Lafayette,LA,US,70501",-92.01740799999999,30.245196000000004,,,,,,,0,8
+244,Intersections,127,WILLOW @ ST ANTOINE,"1385-1399,N St Antoine St,Lafayette,LA,US,70501",-92.023368,30.245587,,,,,,,0,8
+245,Intersections,128,UNIVERSITY @ LA 723 RENAUD,"2200,NE Frontage Rd,Lafayette,LA,US,70501",-92.013821,30.254248999999998,,,,,,,0,8
+246,Intersections,129,UNIVERSITY @ I-10 EB,"1618,N University Ave,Lafayette,LA,US,70506",-92.035713,30.250707000000002,,,,,,,0,8
+247,Intersections,130,UNIVERSITY @ I-10 WB,"1698,LA-182,Lafayette,LA,US,70507",-92.036362,30.251860999999998,,,,,,,0,8
+248,Intersections,131,UNIVERSITY @ WILLOW,"1175-1199,W Willow St,Lafayette,LA,US,70501",-92.032744,30.244491999999997,,,,,,,0,8
+249,Intersections,132,AMBASSADOR @ CAMERON,"905,Ambassador Caffery Pkwy,Lafayette,LA,US,70506",-92.062469,30.233061,,,,,,,0,8
+250,Intersections,133,PINHOOK @ BENDEL,"1351,W Pinhook Rd,Lafayette,LA,US,70503",-92.01639,30.199103000000004,,,,,,,0,8
+251,Intersections,134,CONGRESS @ DOMINGUE,"100,N Domingue Ave,Lafayette,LA,US,70506",-92.08355,30.195854999999998,,,,,,,0,8
+252,Intersections,135,AMBASSADOR @ ERASTE LANDRY,"2107,Eraste Landry Rd,Lafayette,LA,US,70506",-92.075858,30.219127,,,,,,,0,8
+253,Intersections,136,AMBASSADOR @ DULLES,"1411-1499,Dulles Dr,Lafayette,LA,US,70506",-92.07565,30.210528999999998,,,,,,,0,8
+254,Intersections,137,AMBASSADOR @ GUILBEAU,"824,Guilbeau Rd,Lafayette,LA,US,70506",-92.075254,30.202471000000003,,,,,,,0,8
+255,Intersections,138,AMBASSADOR @ CONGRESS,"4131-4199,W Congress St,Lafayette,LA,US,70506",-92.07520500000001,30.195990999999996,,,,,,,0,8
+256,Intersections,139,AMBASSADOR @ RIDGE,"199,LA-93,Lafayette,LA,US,70506",-92.074993,30.18133,,,,,,,0,8
+257,Intersections,140,AMBASSADOR @ ROBLEY,"3801,LA-3073,Lafayette,LA,US,70503",-92.06614300000001,30.171169,,,,,,,0,8
+258,Intersections,141,AMBASSADOR @ DOVER,"154,Dover Blvd,Lafayette,LA,US,70503",-92.06095400000001,30.166892999999998,,,,,,,0,8
+259,Intersections,142,CONGRESS @ CAJUNDOME,"2339-2345,W Congress St,Lafayette,LA,US,70506",-92.041213,30.218805,,,,,,,0,8
+260,Intersections,143,JEFFERSON @ TAFT,"1800-1814,Jefferson St,Lafayette,LA,US,70501",-92.011313,30.215946999999996,,,,,,,0,8
+261,Intersections,144,CAMELLIA @ MT VERNON/ACADEMY,"431-437,Camellia Blvd,Lafayette,LA,US,70508",-92.051322,30.184217999999998,,,,,,,0,8
+262,Intersections,145,NB THRUWAY @ 2ND,"305-399,E 2nd St,Lafayette,LA,US,70501",-92.012939,30.230515000000004,,,,,,,0,8
+263,Intersections,146,SB THRUWAY @ 2ND,"300,E 2nd St,Lafayette,LA,US,70501",-92.01341500000001,30.230326,,,,,,,0,8
+264,Intersections,147,UNIVERSITY @ GENERAL MOUTON,"307,E University Ave,Lafayette,LA,US,70501",-92.005487,30.208419,,,,,,,0,8
+265,Intersections,148,MOSS @ GLORIA SWITCH,"4598,County Hwy 728-1,Lafayette,LA,US,70507",-92.00731999999999,30.294781,,,,,,,0,8
+266,Intersections,149,THRUWAY @ TOWER,"205,Jet Ranger X Dr,Lafayette,LA,US,70508",-92.000663,30.205612,,,,,,,0,8
+267,Intersections,150,THRUWAY @ KALISTE,"700,SW Evangeline Thruway,Lafayette,LA,US,70508",-91.99988499999999,30.200779999999998,,,,,,,0,8
+268,Intersections,151,AMBASSADOR @ BERTRAND,"1929,Bertrand Dr,Lafayette,LA,US,70506",-92.06231,30.228475,,,,,,,0,8
+269,Intersections,152,AMBASSADOR @ DILLARD,"3631,LA-3073,Lafayette,LA,US,70503",-92.069833,30.174213,,,,,,,0,8
+270,Intersections,153,THRUWAY @ VEROT SCHOOL,"2628,US-90,Lafayette,LA,US,70508",-91.989827,30.182808,,,,,,,0,8
+271,Intersections,154,PINHOOK @ SOUTHPARK,"3527-3555,LA-182,Lafayette,LA,US,70508",-91.991556,30.161042,,,,,,,0,8
+272,Intersections,155,THRUWAY @ SOUTHPARK,"151-183,N Southpark Rd,Lafayette,LA,US,70508",-91.979831,30.171388,,,,,,,0,8
+273,Intersections,156,AMBASSADOR @ TUCKER,"3611-3621,LA-3073,Lafayette,LA,US,70503",-92.070773,30.174988,,,,,,,0,8
+274,Intersections,157,BERTRAND @ ERASTE LANDRY,"1579-1581,LA-3184,Lafayette,LA,US,70506",-92.05469000000001,30.224059000000004,,,,,,,0,8
+275,Intersections,158,CONGRESS @ LA 93 RUE DE BELIER,"698,LA-93,Lafayette,LA,US,70506",-92.092023,30.195791999999997,,,,,,,0,8
+276,Intersections,159,PINHOOK @ CORPORATE/PINEHURST,"2200,LA-182,Lafayette,LA,US,70508",-92.00934699999999,30.184697999999997,,,,,,,0,8
+277,Intersections,160,PINHOOK @ LA RUE FRANCE/JOE OLIVER,"1603,W Pinhook Rd,Lafayette,LA,US,70508",-92.016064,30.194382,,,,,,,0,8
+278,Intersections,161,AMBASSADOR @ FERM BOUSTANY,"201,Frem Boustany Dr,Lafayette,LA,US,70508",-92.040591,30.150131,,,,,,,0,8
+279,Intersections,162,COLLEGE @ BACQUE CRESENT/COULEE SHORE,"304,Bacque Crescent Dr,Lafayette,LA,US,70503",-92.02891899999999,30.200771000000003,,,,,,,0,8
+280,Intersections,163,NB THRUWAY @ DONLON,"1273-1299,US-167,Lafayette,LA,US,70501",-92.01299,30.240253000000003,,,,,,,0,8
+281,Intersections,164,SB THRUWAY @ DONLON,"1273-1299,US-167,Lafayette,LA,US,70501",-92.01299,30.240253000000003,,,,,,,0,8
+282,Intersections,165,AMBASSADOR @ I-10 W,,-92.065591,30.244894,,,,,,,0,8
+283,Intersections,166,AMBASSADOR @ WILLOW,"2198,W Willow St,Scott,LA,US,70583",-92.066244,30.243239000000003,,,,,,,0,8
+284,Intersections,167,3RD @ PIERCE GARFIELD 2ND,"251-299,W Second St,Lafayette,LA,US,70501",-92.018781,30.227746000000003,,,,,,,0,8
+285,Intersections,168,AMBASSADOR @ VEROT SCHOOL,"5044,LA-3073,Lafayette,LA,US,70508",-92.032533,30.145836,,,,,,,0,8
+286,Intersections,169,AMBASSADOR @ BONAIRE,"100-198,Bonaire Dr,Lafayette,LA,US,70506",-92.07508299999999,30.191470000000002,,,,,,,0,8
+287,Intersections,170,COLLEGE @ KALISTE,"217-263,E Kaliste Saloom Rd,Lafayette,LA,US,70508",-92.00966,30.193555,,,,,,,0,8
+288,Intersections,171,BERTRAND @ DULLES BILLEAU,"1400-1418,LA-3025,Lafayette,LA,US,70506",-92.052199,30.222559999999998,,,,,,,0,8
+289,Intersections,172,CONGRESS @ THEATER,"2433,W Congress St,Lafayette,LA,US,70506",-92.049715,30.212985999999997,,,,,,,0,8
+290,Intersections,173,AMBASSADOR @ WESTMARK,"299,Westmark Blvd,Lafayette,LA,US,70506",-92.074979,30.184396999999997,,,,,,,0,8
+291,Intersections,174,ERASTE LANDRY @ CAJUNDOME,"801,Cajundome Blvd,Lafayette,LA,US,70506",-92.046929,30.227787,,,,,,,0,8
+292,Intersections,175,DULLES @ FOREMAN,"537-593,Dulles Dr,Lafayette,LA,US,70506",-92.063161,30.214465,,,,,,,0,8
+293,Intersections,176,UNIVERSITY @ HEBRARD,"317,LA-182,Lafayette,LA,US,70503",-92.016977,30.215789,,,,,,,0,8
+294,Intersections,177,JOHNSTON @ DUHON ROAD,"6004,Johnston St,Lafayette,LA,US,70503",-92.082879,30.167137,,,,,,,0,8
+295,Intersections,178,PINHOOK @ BEAU PRE,"100-198,S Beau Pre Rd,Lafayette,LA,US,70508",-91.997987,30.165645,,,,,,,0,8
+296,Intersections,179,PINHOOK @ BONIN,"200-298,Bonin Rd,Lafayette,LA,US,70508",-91.99590400000001,30.164096,,,,,,,0,8
+297,Intersections,180,LOUISIANA @ PONT DES MOUTON,,-92.99260500000001,30.272294,,,,,,,0,8
+298,Intersections,181,LOUISIANA @ WB I-10 RAMP,,-92.992432,30.268629999999998,,,,,,,0,8
+299,Intersections,182,UNIVERSITY @ PONT DES MOUTON,"2701,N University Ave,Lafayette,LA,US,70507",-92.049477,30.275890999999998,,,,,,,0,8
+300,Intersections,183,CAMELLIA @ KALISTE,"1329,Camellia Blvd,Lafayette,LA,US,70508",-92.035791,30.167269,,,,,,,0,8
+301,Intersections,184,VEROT SCHOOL @ CAMELLIA,"1905,LA-339,Lafayette,LA,US,70508",-92.022593,30.160365000000002,,,,,,,0,8
+302,Intersections,185,E GLORIA SWITCH @ I-49 NB RAMP,"101,E Gloria Switch Rd,Lafayette,LA,US,70507",-92.02448000000001,30.295537,,,,,,,0,8
+303,Intersections,186,E GLORIA SWITCH @ I-49 FRONTAGE RD,,-92.023611,30.295499,,,,,,,0,8
+304,Intersections,187,AMBASSADOR @ WALMART ACCESS RD,"3127-3147,LA-3073,Lafayette,LA,US,70506",-92.07493000000001,30.188366,,,,,,,0,8
+305,Intersections,188,THRUWAY @ CASTILLE,"2014,NE Evangeline Throughway,Lafayette,LA,US,70501",-92.012788,30.249809999999997,,,,,,,0,8
+306,Intersections,189,AMBASSADOR @ Settlers trace,,-92.052001,30.159753000000002,,,,,,,0,8
+307,Intersections,190,MARTIAL @ SETTLERS TRACE,"401,Settlers Trace Blvd,Lafayette,LA,US,70508",-92.04249899999999,30.166828999999996,,,,,,,0,8
+308,Intersections,191,CAMELLIA @ SETTLERS TRACE,"1249,Camellia Blvd,Lafayette,LA,US,70508",-92.038837,30.170069,,,,,,,0,8
+309,Intersections,192,CAMELLIA @ SILVERSTONE,"1201,Camellia Blvd,Lafayette,LA,US,70508",-92.040025,30.172985999999998,,,,,,,0,8
+310,Intersections,193,KALISTE SALOOM @ LAKE FARM RD,"2319,Kaliste Saloom Rd,Lafayette,LA,US,70508",-92.045517,30.159330999999998,,,,,,,0,8
+311,Intersections,194,AMBASSADOR @ CRESENT RANCH BLVD,"4589-4799,LA-3073,Lafayette,LA,US,70508",-92.04433900000001,30.153175,,,,,,,0,8
+312,Intersections,195,AMBASSADOR @ VA CLINIC,"3146,Ambassador Caffery Pkwy,Lafayette,LA,US,70506",-92.075027,30.186870000000003,,,,,,,0,8
