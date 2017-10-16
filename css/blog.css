@@ -233,3 +233,8 @@ footer {
 .drop-zone-text {
     display: none;
 }
+
+.current-document, .current-document:hover {
+    text-decoration: none;
+    color: #555;
+}

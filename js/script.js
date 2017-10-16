@@ -4,12 +4,12 @@
 
 (function($, window, undefined) {
 
-  $('.blog-sidebar li').each(function() {
+  $('.blog-sidebar .sidebar-module > ol > li').each(function() {
     var $this = $(this);
     var $submenu = $this.find('> ol');
     if($submenu.length) {
       $this.addClass('sub-menu');
-      $('.sub-menu-toggle').click(function(e){
+      $this.find('.sub-menu-toggle').click(function(e){
         e.stopPropagation();
         var $that = $(this);
         $that.toggleClass('open');
@@ -18,6 +18,13 @@
       });
     }
   });
+
+  // Open menu to the current document
+  $current_document_link = $('[href="'+window.location.href.split('/').pop()+'"]');
+  $current_document_link.parents('li').children('.sub-menu-toggle').not('.open').trigger('click');
+
+  // remove the link on the menu for the current document
+  $current_document_link.removeAttr('href').addClass('current-document');
 
   // Remove unusable confluence sections
   $('.drop-zone-text').remove();
